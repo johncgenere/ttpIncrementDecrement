@@ -6,7 +6,7 @@ class App extends Component {
   render(){
     return (
       <div>
-        <Count number={100} />
+        <Count number={10} />
       </div>
     );
   }

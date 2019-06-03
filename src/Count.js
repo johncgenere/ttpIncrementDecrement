@@ -19,6 +19,10 @@ class Count extends Component {
   }
 
   onDecrementClick = (event) => {
+    if(this.state.number === 0){
+      window.alert('ERROR: \nCannot go lower than 0');
+      return;
+    }
     let number = this.state.number - 1;
     this.setState({number})
   }
