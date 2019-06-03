@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import propTypes from 'prop-types'
+import propTypes from 'prop-types';
+import './Count.css';
 
 class Count extends Component {
   constructor(props){
@@ -30,12 +31,12 @@ class Count extends Component {
   render(){
     return(
       <div>
-      <button className="ui red basic button" onClick={this.onDecrementClick}>
-        <i className="minus icon"></i>
+      <button className="ui red basic button" onClick={this.onDecrementClick} >
+        <i className="minus icon" style={{marginLeft: '10%', marginTop: '10%', fontSize: '50px'}}></i>
       </button>
       <h1> {this.state.number} </h1>
       <button className="ui green basic button" onClick={this.onIncrementClick}>
-        <i className="plus icon"></i>
+        <i className="plus icon" style={{marginLeft: '10%', marginTop: '10%', fontSize: '50px'}}></i>
       </button>
       </div>
     );
