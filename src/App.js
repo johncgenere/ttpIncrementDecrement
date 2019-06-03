@@ -1,12 +1,15 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Count from './Count';
 import './App.css';
 
-function App() {
-  return (
-    <div>
-      <p> Removed Everything </p>
-    </div>
-  );
+class App extends Component {
+  render(){
+    return (
+      <div>
+        <Count number={100} />
+      </div>
+    );
+  }
 }
 
 export default App;
