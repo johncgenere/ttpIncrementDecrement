@@ -26,7 +26,13 @@ class Count extends Component {
   render(){
     return(
       <div>
-
+      <button className="ui red basic button" onClick={this.onDecrementClick}>
+        <i className="minus icon"></i>
+      </button>
+      <h1> {this.state.number} </h1>
+      <button className="ui green basic button" onClick={this.onIncrementClick}>
+        <i className="plus icon"></i>
+      </button>
       </div>
     );
   }
